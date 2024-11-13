@@ -86,7 +86,7 @@ function Adminlogin() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/adminlogin', { email, password });
+            const response = await axios.post('https://resume-shortlister-particles.onrender.com/adminlogin', { email, password });
             setMessage(response.data.message);
             
             if (response.data.success) {
