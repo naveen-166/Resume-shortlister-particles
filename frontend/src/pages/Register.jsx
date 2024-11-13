@@ -18,7 +18,7 @@ function Register() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/register', { email, password });
+            const response = await axios.post('https://resume-shortlister-particles.onrender.com/register', { email, password });
             setMessage(response.data.message);
             if (response.data.success) {
                 navigate('/login');
