@@ -13,7 +13,7 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/login', { email, password });
+            const response = await axios.post('https://resume-shortlister-particles.onrender.com/login', { email, password });
             const { message, success, role, filled } = response.data;
             setMessage(message);
             if (success) {
