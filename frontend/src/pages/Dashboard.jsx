@@ -13,7 +13,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/dashboard');
+        const response = await axios.get('https://resume-shortlister-particles.onrender.com/dashboard');
         setStats(response.data);
       } catch (error) {
         setError('There was an error fetching the stats!');
