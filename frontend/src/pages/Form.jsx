@@ -263,7 +263,7 @@ function Form() {
                 form.append(key, formData[key]);
             }
 
-            const response = await axios.post('http://localhost:5000/form', form, {
+            const response = await axios.post('https://resume-shortlister-particles.onrender.com/form', form, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
 
